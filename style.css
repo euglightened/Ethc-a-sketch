@@ -1,0 +1,25 @@
+.square {
+    width: calc(100vw / 16);
+    height: calc(100vw / 16);
+}
+.square:hover {
+  background-color: rgb(191, 0, 255);
+}
+.squares {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vw;
+}
+#squareNumButton {
+  font-size: 20px;
+  width: 200px;
+  height: 75px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+}
