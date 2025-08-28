@@ -1,25 +1,66 @@
-.square {
-    width: calc(100vw / 16);
-    height: calc(100vw / 16);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.square:hover {
-  background-color: rgb(191, 0, 255);
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  gap: 1rem;
 }
-.squares {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vw;
+
+/* Color palette */
+.palette {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#squareNumButton {
-  font-size: 20px;
-  width: 200px;
-  height: 75px;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin:auto;
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.2s;
+}
+
+.color:hover {
+  transform: scale(1.2);
+}
+
+/* Toolbar hint */
+.toolbar-hint {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* Grid container */
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 1 / 1; /* Keeps it square */
+}
+
+/* Drawing grid */
+#grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  background: white;
 }

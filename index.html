@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id = squareNumButton>Enter number of squares</button>
-    <div id = "squares" class="squares"></div>
-    <script src="script.js"></script>
+  <!-- Color palette -->
+  <div class="palette">
+    <div class="color" style="background: black;"></div>
+    <div class="color" style="background: red;"></div>
+    <div class="color" style="background: blue;"></div>
+    <div class="color" style="background: green;"></div>
+    <div class="color" style="background: orange;"></div>
+    <div class="color" style="background: purple;"></div>
+    <div class="color" style="background: yellow;"></div>
+    <div class="color" style="background: brown;"></div>
+    <div class="color" style="background: pink;"></div>
+    <div class="color" style="background: gray;"></div>
+  </div>
+
+  <!-- Toolbar hints -->
+  <div class="toolbar-hint">
+    Press 'C' to clear, 'S' to change grid size
+  </div>
+
+  <!-- Drawing grid container -->
+  <div class="container">
+    <div id="grid"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
