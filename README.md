@@ -6,7 +6,7 @@ Created during [The Odin Project Foundations](https://www.theodinproject.com/pat
 This project demonstrates DOM manipulation, event listeners, and dynamic grid creation.
 
 ## 🖼️ Live Preview
-👉 [View on GitHub Pages]((https://euglightened.github.io/Ethc-a-sketch/))
+👉 [View on GitHub Pages](https://euglightened.github.io/Ethc-a-sketch/)
 <!-- Replace "your-username" -->
 
 ## 🛠️ Built With
